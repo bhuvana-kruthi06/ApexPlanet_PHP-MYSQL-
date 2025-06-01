@@ -5,10 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
-
 </head>
 <body>
-<?php
+    <?php
 include('db.php');
 
 if (!isset($_SESSION['user_id'])) {
@@ -36,5 +35,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <textarea name="content"><?php echo $post['content']; ?></textarea><br>
     <button type="submit">Update</button>
 </form>
+
 </body>
 </html>

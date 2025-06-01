@@ -5,10 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
-
 </head>
 <body>
-<?php
+    <?php
 include('db.php');
 
 if (!isset($_SESSION['user_id'])) {
@@ -29,5 +28,6 @@ while ($row = $result->fetch_assoc()) {
     echo "<a href='delete.php?id={$row['id']}'>Delete</a><hr>";
 }
 ?>
+
 </body>
 </html>

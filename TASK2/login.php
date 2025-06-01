@@ -5,10 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
-
 </head>
 <body>
-<?php include('db.php'); ?>
+   <?php include('db.php'); ?>
 <form method="post">
     <input type="text" name="username" placeholder="Username" required>
     <input type="password" name="password" placeholder="Password" required>
@@ -32,5 +31,6 @@ if (isset($_POST['login'])) {
     }
 }
 ?>
+ 
 </body>
 </html>
